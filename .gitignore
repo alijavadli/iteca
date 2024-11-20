@@ -1,0 +1,8 @@
+# Client ignores
+client/node_modules/
+client/build/
+client/.env
+
+# Server ignores
+server/node_modules/
+server/.env

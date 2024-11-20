@@ -1,0 +1,280 @@
+.steps {
+    overflow-x: auto;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .step-item {
+        min-width: 260px;
+        min-height: 100px;
+        padding: 24px;
+        background: #fff;
+        border-radius: $border-radius;
+        display: flex;
+        align-items: center;
+
+        &.active {
+            background: $primary;
+            color: #fff;
+
+            .step-number {
+                background: #fff;
+                color: $primary;
+            }
+
+            .step-subtitle {
+                color: #fff;
+                font-size: 14px;
+                margin-top: 4px;
+            }
+        }
+
+        &:not(.active) {
+            background: $gray-1;
+
+            .step-number {
+                background: $gray-2;
+                color: #fff;
+            }
+
+            .step-title {
+                color: $gray-5;
+            }
+
+            .step-subtitle {
+                color: $gray-5;
+            }
+        }
+    }
+
+    .step-number {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+
+    .step-content {
+        flex: 1;
+    }
+
+    .step-title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+
+    .step-subtitle {
+        font-size: 14px;
+    }
+}
+
+.step-section {
+    background-color: $gray-1;
+    border-radius: 20px;
+
+    .section-title {
+        color: $primary;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .section-subtitle {
+        color: $gray-6;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .form-check-label {
+        color: $gray-6;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    .service-block {
+        .form-switch {
+            display: flex;
+            align-items: center;
+            padding: 0;
+
+            .form-check-input {
+                width: 51px;
+                height: 31px;
+                padding: 0;
+                margin-left: 0;
+                margin-right: 12px;
+
+            }
+
+            .form-check-input:hover {
+                cursor: pointer;
+            }
+        }
+
+        .price-block {
+            &.active {
+                .price {
+                    border: 1px solid #2BE5A6;
+                    background: #E9FFF7;
+                    color: black;
+                }
+            }
+
+            .label {
+                min-height: 23px;
+
+                .title {
+                    color: $gray-6;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                }
+
+                .comment {
+                    color: $gray-6;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 14px;
+                    min-height: 16px;
+                }
+
+                input {
+                    &.price {
+                        color: black;
+                        width: 80px;
+                        border: 1px solid $primary;
+                    }
+                }
+            }
+
+            .price {
+                width: 186px;
+                height: 46px;
+                padding: 10px 12px;
+                align-items: center;
+                margin: 10px 0;
+                border-radius: 8px;
+                background: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: $gray-4;
+                display: flex;
+            }
+
+            .dates {
+                display: flex;
+                flex-direction: column;
+                color: $gray-6;
+
+                small {
+                    font-size: 12px;
+
+                    span {
+                        margin-left: 4px;
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .summary-block {
+            .quantity {
+                margin-bottom: 16px;
+            }
+
+            label {
+                display: block;
+                // margin-bottom: 8px;
+                // font-size: 14px;
+            }
+
+            .amount {
+                // font-size: 18px;
+                // font-weight: 500;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .checkbox-service {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-check-input {
+            width: 24px;
+            height: 24px;
+        }
+
+        .form-check-input:hover {
+            cursor: pointer;
+        }
+
+        .form-check-label {
+            color: $gray-6;
+            margin: 5px 10px 0 10px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+        }
+
+        .price {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #1E1E1E;
+        }
+
+        .content-disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    }
+}
+
+.steps-icon {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    height: 56px;
+    padding: 16px 24px;
+    font-weight: 600;
+}
+
+.pre-icon {
+    color: $gray-6;
+    margin-right: 24px;
+}
+
+.pre-icon:hover {
+    color: $gray-6;
+}
+
+.next-icon {
+    color: white;
+}
+
+.next-icon:hover {
+    color: white;
+}

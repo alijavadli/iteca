@@ -1,0 +1,38 @@
+// Variables
+@import "abstracts/variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Layout
+@import "layout/container";
+@import "layout/footer";
+
+// Components
+@import "components/navigation";
+@import "components/forms";
+@import "components/custom-select";
+@import "components/steps";
+@import "components/manager-card";
+@import "components/service-image";
+
+h1 {
+    color: $gray-6;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+
+.row-line {
+    margin: 40px 0;
+    height: 1px;
+    background-color: $gray-2;
+}
+
+
+.nav-header-link {
+    color: $gray-6;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
